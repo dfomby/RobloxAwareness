@@ -28,6 +28,12 @@
   font-weight: 800;
 }
 
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 5rem;
+/* Adjust value as needed for your fixed header height */
+}
+
 
 body{
 color:white;
@@ -59,3 +65,110 @@ h3{
     font-weight: 400;
     text-align:center;
 }
+
+/** header **/
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+li a {
+text-decoration: none;
+}
+
+li {
+list-style-type: none;
+}
+/** header end **/
+
+
+/** menu bar **/
+#top-nav {
+position: absolute;
+display: none;
+text-align: center;
+right: 0;
+top: 90px;
+z-index: 100;
+border: solid 1px black;
+background-color: #b7e2e7;
+}
+
+#top-nav a {
+text-decoration: none;
+color: black;
+}
+
+#top-nav a:hover {
+background-color: rgba(86, 136, 148, 1);
+color: white;
+}
+
+.menuwrap:hover #top-nav {
+display: block;
+
+}
+
+.material-symbols-outlined {
+color: white;
+float: right;
+padding-right: 5px;
+
+}
+
+#top-nav ul {
+font-size: 1.2em;
+}
+
+#top-nav ul a {
+display: block;
+padding: 10px;
+border: solid 0.5px black;
+
+}
+
+#top-nav input {
+display: block;
+margin: 10px 5px;
+}
+
+/** menu bar end **/
+
+@media (min-width: 768px) {
+  /**top nav**/
+  
+  .material-symbols-outlined {
+    display: none;
+  }
+  
+  #top-nav {
+    display: block;
+    position: static;
+    border: none;
+    background-color: transparent;
+  }
+  
+  #top-nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+  }
+  
+  #top-nav ul a {
+    padding: 10px;
+    border: none;
+  }
+  
+  #top-nav input {
+    display: none;
+  }
+}
+/** top nav end **/
