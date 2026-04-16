@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Builder Extended';
+  src: url(fonts/BuilderExtended/BuilderExtended-Light-300_0.otf) format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url(fonts/BuilderExtended/BuilderExtended-Regular-400_0.otf) format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url(fonts/BuilderExtended/BuilderExtended-SemiBold-600_0.otf) format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url(fonts/BuilderExtended/BuilderExtended-Bold-700_0.otf) format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url(fonts/BuilderExtended/BuilderExtended-ExtraBold-800_0.otf) format('opentype');
+  font-weight: 800;
+}
+
+
+body{
+color:white;
+    font-family: "Inter", serif;
+font-style: normal;
+background: linear-gradient(180deg, #335FFF 0%, #CE162E 100%);
+    background-attachment: fixed;
+  height: 200vh;
+  margin:0;
+
+}
+
+h1 {
+  font-family: 'Builder Extended',sans-serif;
+  font-weight: 800;
+  font-size:5rem;
+  text-align:center;
+}
+
+h2{
+    font-family: 'Builder Extended',sans-serif;
+    font-weight: 600;
+    font-size:2rem;
+    text-align:center;
+}
+
+h3{
+    font-family:Helvetica, sans-serif, arial;
+    font-weight: 400;
+    text-align:center;
+}
