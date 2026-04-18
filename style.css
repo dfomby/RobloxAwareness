@@ -112,17 +112,17 @@ footer {
   align-items: center;
   font-family: 'Builder Extended', sans-serif;
   font-size: 1.4rem;
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 
 .footer-link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   text-decoration: none;
   color: black;
    transition-property: color;
-    transition-duration: 0.5s;  
+    transition-duration: 0.5s;
 }
 
 .footer-link:hover{
@@ -396,13 +396,12 @@ margin: 10px 5px;
 }
 
 .roblox_background a{
-  text-decoration: none;
+  text-decoration: underline;
   color:white;
 }
 
 .roblox_background a:hover{
-  background-color: #3351ff;
-  padding:0.5rem;
+  color: #3351ff;
 }
 
 @media (min-width: 768px) {
