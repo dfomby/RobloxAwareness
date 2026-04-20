@@ -68,7 +68,7 @@ body::before {
 h1 {
   font-family: 'Builder Extended',sans-serif;
   font-weight: 800;
-  font-size:2.5rem;
+  font-size:3.5rem;
   text-align:center;
 }
 
@@ -93,6 +93,9 @@ h3{
     font-family:Helvetica, sans-serif, arial;
     font-weight: 400;
     text-align:center;
+}
+p{
+  font-size:1.2rem;
 }
 
 #container{
@@ -156,15 +159,17 @@ background-color: #CE162E;
 box-shadow:5px 5px #910e1f;
 border-radius:20px;
 color:white;
-padding:10px;
+padding:30px;
 margin:0;
 text-decoration:none;
 transition-property: transform;
     transition-duration: 0.5s;
     margin-bottom: 2em;
+    height:83%;
 }
 .cta_container h2{
   margin:20px;
+  margin-top:-10px;
 }
 
 .cta_deco{
@@ -183,6 +188,8 @@ transform: scale(1.05);
 
 .responsive-img {
 width: 100%;
+height: auto;
+
 }
 
 #flex{
@@ -207,8 +214,6 @@ width: 100%;
     padding:0.5em;
     padding-left:2em;
     padding-right:2em;
-    margin-left:50px;
-    margin-right:50px;
     margin-top:20px;
     margin-bottom:20px;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.457);
@@ -237,12 +242,14 @@ width: 100%;
     padding:0.5em;
     padding-left:2.8em;
     padding-right:2.8em;
-    margin-left:50px;
-    margin-right:50px;
     margin-top:20px;
     margin-bottom:20px;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.457);
 
+}
+.btn,
+.btn2 {
+  margin: 20px;
 }
 
 .btn2:hover {
@@ -371,10 +378,10 @@ margin: 10px 5px;
 /**menu Icon end**/
 
 
-/**backgrounds**/
+/**roblox background**/
 .roblox_background{
   background:
-            url("images/robloxbackground.jpg") no-repeat right/cover;
+            url("images/robloxbackground.jpg") no-repeat center/cover;
 
   padding:1.5em;
 }
@@ -391,7 +398,6 @@ margin: 10px 5px;
  text-align: center;
  margin:2em;
   border-radius:20px;
-  font-size:1.2rem;
   color:white;
 }
 
@@ -404,7 +410,65 @@ margin: 10px 5px;
   color: #3351ff;
 }
 
+/**roblox background end**/
+
+/** blue background**/
+.blue_background{
+  background:#335FFF;
+  padding:1.5em;
+}
+
+.blue_background h1{
+  color:#ffffff;
+  margin-top:0.2em;
+  margin-bottom:0;
+}
+.blue_background p{
+  padding-left:5%;
+  padding-right:5%;
+  color:white;
+}
+/** blue background end **/
+
+
+/**about section**/
+.about_section{
+  padding:1.5em;
+}
+
+.about_section h1{
+  margin-top:0.2em;
+  margin-bottom:0;
+}
+
+.about_section p{
+  padding-left:5%;
+  padding-right:5%;
+  color:white;
+  text-align: center;
+}
+
+#flex2{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+#flex2 h3{
+  padding-left:0;
+  padding-right:0;
+  margin:1em;
+  font-family: 'Builder Extended', sans-serif;
+}
+
+
 @media (min-width: 768px) {
+  #subtitle{
+  padding-left:4em;
+  padding-right:4em;
+}
+
+  
   /**top nav**/
   
   .material-symbols-outlined {
@@ -454,7 +518,7 @@ h2{
 .programs-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-gap: 1em;
+        grid-gap: 3em;
     }
 
 }
