@@ -497,6 +497,9 @@ margin: 10px 5px;
   display:block !important;
 }
 
+.tips_container2 a {
+  display: block;
+}
 
 .tips_grid img{
 max-width: 95%;
