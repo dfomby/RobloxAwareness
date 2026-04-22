@@ -304,7 +304,7 @@ position: absolute;
 display: none;
 text-align: center;
 right: 0;
-top: 35px;
+top: 90px;
 z-index: 100;
 border: solid 1px black;
 background-color: #335fffaa;
@@ -486,6 +486,17 @@ margin: 10px 5px;
   display:block;
 }
 
+.tips_container2{
+  border-width:5px;
+  border-color:#335FFF;
+  border-style:solid;
+  padding:1.5em;
+  border-radius:20px;
+  background-color:white;
+  color:black;
+  display:block;
+}
+
 
 .tips_grid img{
 max-width: 95%;
@@ -501,6 +512,24 @@ margin-right: auto;
   text-align: left;
 }
 
+.tips_container2 h2{
+  color:#335FFF;
+  text-align: center;
+}
+
+.tips_container2 a h3{
+  text-decoration:underline;
+  color:black;
+  font-size:3rem;
+  text-align: center;
+
+}
+
+.tips_container2 a h3:hover{
+  color:#CE162E;
+}
+
+
 
 @media (min-width: 768px) {
  .tips_grid{
@@ -515,6 +544,14 @@ margin-right: auto;
   padding-left:1.5em;
 }
  
+.tips_container2 a h3{
+  text-decoration:underline;
+  color:black;
+  font-size:5rem;
+  text-align: left;
+
+}
+
   #subtitle{
   padding-left:4em;
   padding-right:4em;
