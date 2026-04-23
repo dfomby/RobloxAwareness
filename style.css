@@ -459,6 +459,7 @@ margin: 10px 5px;
 .blue_background{
   background:#335FFF;
   padding:1.5em;
+  display:block;
 }
 
 .blue_background h1{
@@ -487,6 +488,7 @@ margin: 10px 5px;
 .white_background{
   background:white;
   padding:1.5em;
+  display:block;
 }
 
 .white_background h3{
@@ -524,6 +526,7 @@ margin: 10px 5px;
 .red_background{
   background:#CE162E;
   padding:1.5em;
+  display:block;
 }
 
 .red_background h3{
