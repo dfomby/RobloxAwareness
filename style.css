@@ -149,6 +149,37 @@ footer .btn {
 
 /** footer end **/
 
+.insta-link{
+  display: inline-flex;
+  flex-direction: row;      /* side by side */
+  align-items: center;      /* vertical alignment */
+  justify-content: center;  /* center the whole group horizontally */
+  gap: 10px;                /* space between image and text */
+
+  text-decoration: none;
+  color: white;
+  font-family: 'Builder Extended', sans-serif;
+
+  
+  font-size: 1.4rem;
+  margin-bottom:2rem;
+
+   transition: color 0.5s;
+}
+
+
+
+.insta-link:hover{
+  color: #3351ff;
+}
+
+
+.insta-link img {
+  width: 50px;
+  
+}
+
+
 /** cta **/
 .cta {
   font-family: Helvetica, sans-serif;
@@ -433,14 +464,100 @@ margin: 10px 5px;
 .blue_background h1{
   color:#ffffff;
   margin-top:0.2em;
-  margin-bottom:0;
+  margin-bottom:0.5em;
 }
 .blue_background p{
   padding-left:2%;
   padding-right:2%;
   color:white;
 }
+
+
+.blue_background a p{
+  text-decoration:underline;
+}
+
+.blue_background a p:hover{
+  color:#CE162E;
+}
 /** blue background end **/
+
+
+/** white background**/
+.white_background{
+  background:white;
+  padding:1.5em;
+}
+
+.white_background h3{
+  color:#CE162E;
+  text-align: left;
+  font-family: 'Builder Extended',sans-serif;
+  margin:0;
+  padding-left:2%;
+  font-weight:600;
+  font-size:1.5rem;
+
+}
+
+.white_background a p{
+  text-decoration:underline;
+}
+
+.white_background a p:hover{
+  color:#3351ff;
+}
+
+.white_background h1{
+  color:#3351ff;
+  margin-top:0.2em;
+  margin-bottom:0.5em;
+}
+.white_background p{
+  padding-left:2%;
+  padding-right:2%;
+  color:black;
+}
+/** white background end **/
+
+/** red background**/
+.red_background{
+  background:#CE162E;
+  padding:1.5em;
+}
+
+.red_background h3{
+  color:white;
+  text-align: left;
+  font-family: 'Builder Extended',sans-serif;
+  margin:0;
+  padding-left:2%;
+  font-weight:600;
+  font-size:1.5rem;
+
+}
+
+.red_background a p{
+  text-decoration:underline;
+}
+
+.red_background a p:hover{
+ color:#3351ff;
+}
+
+.red_background h1{
+  color:white;
+  margin-top:0.2em;
+  margin-bottom:1em;
+  font-size:3rem;
+}
+.red_background p{
+  padding-left:2%;
+  padding-right:2%;
+  color:white;
+}
+/** red background end **/
+
 
 
 /**about section**/
@@ -534,6 +651,9 @@ margin-right: auto;
   color:#CE162E;
 }
 
+section {
+text-align:center;
+}
 
 
 @media (min-width: 768px) {
@@ -620,5 +740,17 @@ h2{
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-gap: 3em;
     }
+
+    .btns {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+grid-gap: 2em;
+text-align: center;
+justify-content: space-evenly;
+}
+
+section {
+flex: content;
+}
 
 }
