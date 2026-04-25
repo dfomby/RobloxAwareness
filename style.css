@@ -2,36 +2,46 @@
   font-family: 'Builder Extended';
   src: url(fonts/BuilderExtended/BuilderExtended-Light-300_0.otf) format('opentype');
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Builder Extended';
   src: url(fonts/BuilderExtended/BuilderExtended-Regular-400_0.otf) format('opentype');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Builder Extended';
   src: url(fonts/BuilderExtended/BuilderExtended-SemiBold-600_0.otf) format('opentype');
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Builder Extended';
   src: url(fonts/BuilderExtended/BuilderExtended-Bold-700_0.otf) format('opentype');
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Builder Extended';
   src: url(fonts/BuilderExtended/BuilderExtended-ExtraBold-800_0.otf) format('opentype');
   font-weight: 800;
+  font-display: swap;
 }
 
 html {
 scroll-behavior: smooth;
 scroll-padding-top: 5rem;
 /* Adjust value as needed for your fixed header height */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -43,9 +53,11 @@ font-style: normal;
   margin:0;
   position:relative;
   z-index: 0;
-  display:flex;
-  flex-direction:column;
-  min-height: 100vh;
+display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;   /* fallback */
+  min-height: 100dvh;  /* mobile fix */
 
 }
 
@@ -58,8 +70,7 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+   inset: 0;
   background: linear-gradient(180deg, #335FFF 0%, #CE162E 100%);
   z-index: -1;
 }
