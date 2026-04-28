@@ -33,6 +33,24 @@
   font-display: swap;
 }
 
+.game-wrapper {
+  width: 100%;
+  max-width: 900px;       /* max width on desktop */
+  aspect-ratio: 3 / 2;    /* Unity ratio */
+  margin: 2rem auto;      /* center and add some spacing */
+  position: relative;
+}
+
+.game-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border:solid;
+  border-color:#3351ff;
+  border-radius: 2%;
+}
+
 html {
 scroll-behavior: smooth;
 scroll-padding-top: 5rem;
