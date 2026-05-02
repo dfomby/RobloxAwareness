@@ -130,7 +130,6 @@ p{
 #container{
   padding:1.5em;
   flex:1;
-    min-height: calc(100vh - 80px); /* subtract footer height if fixed */
     display: flex;
     flex-direction: column;
 }
