@@ -204,27 +204,61 @@ footer .btn {
 
 /** cta **/
 .cta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.cta_container {
+  overflow: hidden;
+  padding: 0;
+}
+
+.cta_container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.cta_container .btn {
+  margin-top: auto;
+}
+
+.cta {
+
   font-family: Helvetica, sans-serif;
-  font-style:oblique;
+  font-style: oblique;
   font-size: 1.8rem;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  align-items:center;
 }
 
-.cta_container{
-background-color: #CE162E;
-box-shadow:5px 5px #910e1f;
-border-radius:20px;
-color:white;
-padding:30px;
-margin:0;
-text-decoration:none;
-transition-property: transform;
-    transition-duration: 0.5s;
-    margin-bottom: 2em;
-    height:83%;
+
+
+.cta_container {
+  background-color: #CE162E;
+  box-shadow: 5px 5px #910e1f;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s;
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.cta_content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:30px;
+  padding-bottom:0;
+}
+
+
 .cta_container h2{
   margin:20px;
   margin-top:-10px;
@@ -246,7 +280,8 @@ transform: scale(1.05);
 
 .responsive-img {
 width: 100%;
-height: auto;
+height:auto;
+
 
 }
 
