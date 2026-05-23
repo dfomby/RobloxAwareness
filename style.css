@@ -255,7 +255,7 @@ footer .btn {
   padding-left: 30px;
   padding-right: 30px;
   padding-top:30px;
-  padding-bottom:0;
+  padding-bottom:20px;
 }
 
 
@@ -718,7 +718,14 @@ text-align:center;
 
 
 @media (min-width: 768px) {
- .tips_grid{
+ .cta_content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:30px;
+  padding-bottom:0px;
+}
+ 
+  .tips_grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1em;
